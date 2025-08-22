@@ -2602,29 +2602,30 @@ select.form-control {
   border-left: none;
 }
 
-/* Alternative - Style plus proche d'Adobe PDF */
 .pdf-icon-adobe {
   display: inline-block;
-  width: 18px;
-  height: 22px;
-  background: var(--color-error);
-  border-radius: var(--radius-sm);
+  width: 40px;           /* Plus petit */
+  height: 50px;          /* Plus petit */
+  background: #dc2626;
+  border-radius: 3px;
   position: relative;
   margin-right: var(--space-4);
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .pdf-icon-adobe::before {
-  content: "";
+  content: "PDF";
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--color-white);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-bold);
-  font-family: var(--font-family-base);
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 .pdf-icon-adobe::after {
